@@ -37,8 +37,8 @@ public class Login {
         driver.findElement(By.id("btnSubmit")).click();
     }
 
-    @When("^I click on respository menu item$")
-    public void i_click_on_respository_menu_item(){
+    @When("^I click on repository menu item$")
+    public void i_click_on_repository_menu_item(){
         new WebDriverWait(driver, 20).until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"historyHeader\"]/span[2]")));
         String actual=driver.findElement(By.xpath("//*[@id=\"historyHeader\"]/span[2]")).getText();
         Assert.assertEquals("RECENT",actual);
