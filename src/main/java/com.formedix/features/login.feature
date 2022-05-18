@@ -1,5 +1,5 @@
 Feature: Login
-  Scenario: Login validation with valid credentials
+  Scenario: Login and update medical history description
     Given I am on the Home page "https://ryze-staging.formedix.com/sign-in"
     When  I enter user name in the user name field as "testteamtechtest"
     And   I enter password in the password field as "T3cht3ster"
