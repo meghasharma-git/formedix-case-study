@@ -73,14 +73,14 @@ public class Login {
         driver.findElement(By.id("FORMTypeName")).click();
     }
 
-    @When("^I click on medical history form$")
+    @When("^I click on medical history form")
     public void i_click_on_medical_history_form(){
         new WebDriverWait(driver, 20)
-                .until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"uuid-be7ff048-01f1-4bbe-998c-7f1072f24a21\"]/div/div/span[2]/div[1]")));
-        driver.findElement(By.xpath("//*[@id=\"uuid-be7ff048-01f1-4bbe-998c-7f1072f24a21\"]/div/div/span[2]/div[1]")).click();
+                .until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"uuid-9ddb656a-348c-4c17-9137-708e54cc96df\"]/div/div/span[2]/div[1]/span")));
+        driver.findElement(By.xpath("//*[@id=\"uuid-9ddb656a-348c-4c17-9137-708e54cc96df\"]/div/div/span[2]/div[1]/span")).click();
     }
 
-    @When("^I click on edit button$")
+    @When("^I click on edit button")
     public void i_click_on_edit_button(){
         new WebDriverWait(driver, 20)
                 .until(ExpectedConditions.elementToBeClickable(By.id("switchEditMode")));
@@ -96,7 +96,7 @@ public class Login {
     }
 
 
-    @When("^I click on validate and update button$")
+    @When("^I click on validate and update button")
     public void i_click_on_validate_and_update_button(){
         driver.findElement(By.id("saveAsset")).click();
         new WebDriverWait(driver, 20).
@@ -106,7 +106,7 @@ public class Login {
         Assert.assertEquals("description updated", actual);
     }
 
-    @When("^I click on menu user$")
+    @When("^I click on menu user")
     public void i_click_on_menu_user(){
         new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(By.id("menuUser")));
         driver.findElement(By.id("menuUser")).click();
